@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Address Bean (Constructor Injection) -->
+    <bean id="address1" class="com.example2.Address">
+        <constructor-arg value="Kolkata"/>
+        <constructor-arg value="West Bengal"/>
+        <constructor-arg value="India"/>
+    </bean>
+    <bean id="address2" class="com.example2.Address">
+        <constructor-arg value="Mumbai"/>
+        <constructor-arg value="Maharashtra"/>
+        <constructor-arg value="India"/>
+    </bean>
+    <!-- Student Bean (Setter Injection) -->
+    <bean id="studentBean" class="com.example2.Student">
+        <property name="id" value="101"/>
+        <property name="name" value="Anuvab"/>
+        <property name="address" ref="address1"/>
+    </bean>
+    <!-- Teacher Bean (Constructor Injection) -->
+    <bean id="teacherBean" class="com.example2.Teacher">
+        <constructor-arg value="501"/>
+        <constructor-arg value="Dr. Sony Bravia"/>
+        <constructor-arg ref="address2"/>
+    </bean>
+    <!-- Course Bean (Setter Injection with multiple references) -->
+    <bean id="courseBean" class="com.example2.Course">
+        <property name="courseName" value="Spring Framework
+Basics"/>
+        <property name="student" ref="studentBean"/>
+        <property name="teacher" ref="teacherBean"/>
+    </bean>
+</beans>
