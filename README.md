@@ -29,7 +29,7 @@ StMgmt_SpringFramework/
     ├── applicationContext2.xml
     └── applicationContext3.xml
 ```
-### ### OUTPUT
+### OUTPUT
 <img width="1708" height="2044" alt="image" src="https://github.com/user-attachments/assets/03445ddd-2384-4be4-bad5-640142dfe6ec" />
 
 ### Technologies Used
