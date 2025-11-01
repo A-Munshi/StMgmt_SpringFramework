@@ -9,14 +9,13 @@ To demonstrate how Spring manages dependencies between beans using:
 * XML-based Bean Configuration
 
 ### Key Concepts
-```
 | Concept                     | Demonstrated In             | Description                                    |
 | --------------------------- | --------------------------- | ---------------------------------------------- |
 | **Constructor Injection**   | `Address`, `Teacher`        | Dependencies passed through class constructors |
 | **Setter Injection**        | `Student`, `Course`         | Dependencies injected via setter methods       |
 | **Bean References**         | XML `<property ref="..."/>` | Links multiple beans together                  |
 | **Menu-Driven Console App** | `MenuApp`                   | Interactive CLI to view details dynamically    |
-```
+
 ### Project Structure
 ```
 StMgmt_SpringFramework/
@@ -41,7 +40,7 @@ StMgmt_SpringFramework/
 * **OOP + Dependency Injection principles**
 
 ### Learning Outcomes
-✅ Understood **Constructor vs Setter Injection**
-✅ Learned how **Spring IoC Container** manages beans
-✅ Created **modular and reusable** Java components
-✅ Built a **menu-driven Spring application**
+* ✅ Understood **Constructor vs Setter Injection**
+* ✅ Learned how **Spring IoC Container** manages beans
+* ✅ Created **modular and reusable** Java components
+* ✅ Built a **menu-driven Spring application**
